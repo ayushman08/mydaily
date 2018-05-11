@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:id="@+id/signupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="@string/emailHint"
+            android:padding="@dimen/dp15"
+            android:background="@drawable/edittext_drawable"
+            android:inputType="textEmailAddress"
+            android:paddingTop="10dp"
+            />
+
+        <EditText 
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:background="@drawable/edittext_drawable"
+            android:padding="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:hint="@string/passwordHint"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+           />
+
+        <EditText
+            android:id="@+id/retype_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:background="@drawable/edittext_drawable"
+            android:hint="@string/retypepasswordHint"
+            android:padding="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+           />
+
+        <TextView
+            android:id="@+id/termsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/termsnconditionLink"
+            android:inputType="text"
+            android:textSize="@dimen/sp18"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/button_ripple_background"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/dp10"
+        android:textSize="@dimen/sp20" />
+</LinearLayout>

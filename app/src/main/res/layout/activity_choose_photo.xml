@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartdata.activities.ChoosePhotoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutObj"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFromCamera"
+            android:text="@string/from_camera"
+            android:contentDescription="@string/from_camera"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFromGallery"
+            android:text="@string/from_gallery"
+            android:contentDescription="@string/from_gallery"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRecordVideo"
+            android:text="@string/record_video"
+            android:contentDescription="@string/record_video"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutObj1"
+        android:layout_below="@+id/layoutObj"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGallery"
+            android:text="@string/view_gallery"
+            android:contentDescription="@string/view_gallery"/>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/innerLayoutObj"
+        android:orientation="vertical"
+        android:layout_below="@+id/layoutObj1"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/imageView1"
+            android:contentDescription="@string/preview_image"
+            android:visibility="gone"/>
+
+        <VideoView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/videoView"
+            android:contentDescription="@string/preview_video"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/actionButton"
+            android:layout_below="@+id/layoutObj">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:id="@+id/uploadImage"
+                android:visibility="gone"
+                android:contentDescription="@string/upload"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resizeImage"
+                android:id="@+id/resizeImage"
+                android:visibility="gone"
+                android:contentDescription="@string/resizeImage"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotateImage"
+                android:id="@+id/rotateImage"
+                android:visibility="gone"
+                android:contentDescription="@string/rotateImage"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deleteVideo"
+                android:id="@+id/deleteVideo"
+                android:visibility="gone"
+                android:contentDescription="@string/deleteVideo"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/actionButton1"
+            android:layout_below="@+id/actionButton">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deleteImage"
+                android:id="@+id/deleteImage"
+                android:visibility="gone"
+                android:contentDescription="@string/deleteImage"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

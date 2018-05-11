@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1016103540974",
+    "firebase_url": "https://mydaily-1503315673129.firebaseio.com",
+    "project_id": "mydaily-1503315673129",
+    "storage_bucket": "mydaily-1503315673129.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016103540974:android:c91d92f7b6f95127",
+        "android_client_info": {
+          "package_name": "com.smartdata.mydaily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016103540974-e22i24kvavatef4m9i2vak4i9du8t235.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartdata.mydaily",
+            "certificate_hash": "3429f2a239035bdc66ef90db7b5693fd06880774"
+          }
+        },
+        {
+          "client_id": "1016103540974-277ja1g0vftd83p24p53jspfp9a9kl2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSWny-aYTwLo76CeOdauKSc6TS2w3crvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016103540974-277ja1g0vftd83p24p53jspfp9a9kl2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

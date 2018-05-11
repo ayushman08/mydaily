@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.smartdata.utils.CustomScrollView
+        android:id="@+id/new_job_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:descendantFocusability="beforeDescendants"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/date_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:background="@drawable/bottom_gray_line_background"
+                    android:padding="@dimen/dp10"
+                    android:text="Date"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/job_id_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:hint="@string/job_id"
+                    android:background="@drawable/bottom_gray_line_background"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="8"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp10"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="left"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/copy_previous"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/production_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:padding="@dimen/dp10"
+                    app:buttonTint="@color/button_active" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/client_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:background="@drawable/bottom_gray_line_background"
+                android:maxLines="1"
+                android:padding="@dimen/dp15"
+                android:textSize="@dimen/sp18"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/dp15"
+                android:text="@string/description"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/job_description_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:maxLines="3"
+                android:background="@drawable/bottom_gray_line_background"
+                android:padding="@dimen/dp15"
+                android:textSize="@dimen/sp18"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/dp15"
+                android:text="@string/location"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/location_ac_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:padding="@dimen/dp15"
+                android:background="@drawable/bottom_gray_line_background"
+                android:textSize="16sp" />
+
+            <fragment
+                android:id="@+id/location_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp1" />
+
+            <TextView
+                android:id="@+id/assign_foreman_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/down_arrow"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:text="@string/assign_to_foreman"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/production_item_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/down_arrow"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:text="@string/production_items"
+                android:textSize="16sp"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/production_item_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/down_arrow"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:text="@string/production_items"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/production_item_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/down_arrow"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:text="@string/production_items"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:theme="@style/MyEditTextTheme" />
+
+        </LinearLayout>
+
+
+    </com.smartdata.utils.CustomScrollView>
+
+
+</LinearLayout>

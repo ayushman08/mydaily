@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar" />
+
+    <ListView
+        android:id="@+id/job_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/dp1"
+        android:visibility="gone">
+
+    </ListView>
+
+    <com.smartdata.utils.CustomScrollView
+        android:id="@+id/new_job_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:descendantFocusability="beforeDescendants"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="@dimen/dp10"
+                    android:text="Date"
+                    android:textSize="16sp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/dp10"
+                    android:text="#103"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="left"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/copy_previous"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/production_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:padding="@dimen/dp10"
+                    app:buttonTint="@color/button_active" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/dp15"
+                android:text="@string/description"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/description_hint"
+                android:maxLines="3"
+                android:textSize="@dimen/sp18"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/dp15"
+                android:text="@string/location"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/location_ac_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/location_hint"
+                android:maxLines="1"
+                android:textSize="@dimen/sp18"
+                app:theme="@style/MyEditTextTheme" />
+
+            <LinearLayout
+                android:id="@+id/map_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/location_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:layout_marginBottom="@dimen/dp15"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:layout_marginTop="@dimen/dp1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/assign_foreman_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/down_arrow"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:text="@string/assign_to_foreman"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/production_item_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/down_arrow"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:text="@string/production_items"
+                android:textSize="16sp"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/production_item_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/down_arrow"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:text="@string/production_items"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/production_item_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/down_arrow"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:text="@string/production_items"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:theme="@style/MyEditTextTheme" />
+
+        </LinearLayout>
+    </com.smartdata.utils.CustomScrollView>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/button_disable"
+        android:gravity="center"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>

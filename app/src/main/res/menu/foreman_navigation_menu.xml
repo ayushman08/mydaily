@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dailies"
+        android:icon="@drawable/ic_action_dailies"
+        android:title="@string/dailies" />
+    <item
+        android:id="@+id/navigation_jobs"
+        android:icon="@drawable/ic_action_job"
+        android:title="@string/jobs" />
+
+    <item
+        android:id="@+id/navigation_new_dailies"
+        android:icon="@drawable/ic_action_job"
+        android:title="@string/new_daily" />
+
+    <item
+        android:id="@+id/navigation_incidents"
+        android:icon="@drawable/ic_action_incidents"
+        android:title="@string/incidents" />
+    <item
+        android:id="@+id/navigation_crews"
+        android:icon="@drawable/ic_action_crews"
+        android:title="@string/crews" />
+
+
+</menu>

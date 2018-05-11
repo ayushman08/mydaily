@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:padding="@dimen/dp15">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circularImageView"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp150"
+                    android:layout_gravity="center|top"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/dp1" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:indeterminateDrawable="@drawable/custom_progress"
+                    android:visibility="gone" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/select_profile_iv"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/ic_action_camera"
+                    app:backgroundTint="@color/button_active"
+                    app:fabSize="mini" />
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/firstName_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/edittext_drawable"
+                android:contentDescription="@string/email"
+                android:hint="@string/firstNameHint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/dp15" />
+
+            <EditText
+                android:id="@+id/lastName_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edittext_drawable"
+                android:contentDescription="@string/email"
+                android:hint="@string/lastNameHint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/dp15" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edittext_drawable"
+                android:contentDescription="@string/email"
+                android:hint="@string/emailHint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/dp15" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/updateButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp70"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@drawable/button_disable"
+                android:gravity="center"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

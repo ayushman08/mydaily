@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView1"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/firstName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edittext_drawable"
+                android:contentDescription="@string/email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/dp15"
+                android:textSize="@dimen/sp18" />
+
+            <TextView
+                android:id="@+id/lastName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edittext_drawable"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/dp15"
+                android:textSize="@dimen/sp18" />
+
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edittext_drawable"
+                android:contentDescription="@string/email"
+                android:maxLines="1"
+                android:padding="@dimen/dp15"
+                android:textSize="@dimen/sp18" />
+
+            <EditText
+                android:id="@+id/feedback_description_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_drawable"
+                android:gravity="left"
+                android:hint="@string/description"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18"
+                android:theme="@style/MyEditTextTheme" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/button_disable"
+        android:gravity="center"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>
+

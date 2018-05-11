@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dp15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/notification_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@string/forgot_password"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingTop="@dimen/dp5"
+                        android:text="@string/allow_notificatios"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/notification_cb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="@dimen/dp10"
+                        app:buttonTint="@color/button_active" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reminder_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@string/forgot_password"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingTop="@dimen/dp5"
+                        android:text="@string/set_reminders"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/reminder_cb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="@dimen/dp10"
+                        app:buttonTint="@color/button_active" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/location_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@string/forgot_password"
+                        android:gravity="left"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingTop="@dimen/dp5"
+                        android:text="@string/allow_location"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/location_cb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="@dimen/dp10"
+                        app:buttonTint="@color/button_active" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:elevation="@dimen/dp15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dailies_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/forgot_password"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="@string/download_dailies"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/dailes_submitted_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/forgot_password"
+                    android:gravity="left"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/download_submitted_dailies"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/feedbackTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/forgot_password"
+                    android:gravity="left"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/send_feedback"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/privacyTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/forgot_password"
+                    android:gravity="left"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/termsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/forgot_password"
+                    android:gravity="left"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/terms_conditions"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/shareTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="@string/share"
+                    android:gravity="left"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/share"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/logout_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/logout"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:text="@string/logout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

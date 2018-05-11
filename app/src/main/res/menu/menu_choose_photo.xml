@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.smartdata.activities.ShowMediaGalleryActivity">
+    <item android:id="@+id/action_images_only" android:title="@string/view_images_only"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/action_videos_only" android:title="@string/view_videos_only"
+        android:orderInCategory="101" app:showAsAction="always" />
+    <item android:id="@+id/action_both" android:title="@string/view_both_only"
+        android:orderInCategory="102" app:showAsAction="always" />
+</menu>

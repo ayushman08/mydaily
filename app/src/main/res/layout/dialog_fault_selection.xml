@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp200"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/yes_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_gray_line_background"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="@string/yes"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18" />
+
+    <TextView
+        android:id="@+id/no_tv"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_gray_line_background"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="@string/no"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18" />
+</LinearLayout>

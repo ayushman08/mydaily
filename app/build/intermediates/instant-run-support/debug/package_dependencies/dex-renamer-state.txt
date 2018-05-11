@@ -1,0 +1,7 @@
+#Fri May 11 12:50:46 IST 2018
+base.0=/Users/sourabhtripathi/Desktop/mydaily/app/build/intermediates/transforms/dexMerger/debug/1
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/sourabhtripathi/Desktop/mydaily/app/build/intermediates/transforms/dexMerger/debug/1/classes2.dex
+base.1=/Users/sourabhtripathi/Desktop/mydaily/app/build/intermediates/transforms/dexMerger/debug/1
+file.0=/Users/sourabhtripathi/Desktop/mydaily/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex

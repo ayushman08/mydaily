@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp60"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_daily_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/save_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?android:selectableItemBackground"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+
+            <ImageView
+                android:id="@+id/draft_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_action_save"
+                android:tint="@color/white"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/new_daily_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20" />
+
+
+            <ImageView
+                android:id="@+id/new_daily_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/mr_ic_settings_dark"
+                android:tint="@color/white" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<resources>
+    <string name="app_name">MyDaily</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_draft">Draft</string>
+    <string name="logoContentDescription">Splash Logo</string>
+    <!-- Login Screen -->
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="btn_signIn">Sign In</string>
+    <string name="remember_me">Keep Me Logged In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="EmailErrorMessage">Please enter email</string>
+    <string name="PasswordErrorMessage">Please enter password</string>
+    <string name="invalid_email">Please enter valid email address</string>
+    <string name="missing_email">Email is missing</string>
+    <string name="missing_password">Password is missing</string>
+    <string name="invalid_email_password">Entered email or password are not in correct format</string>
+    <string name="incorrect_email_password">Either email or password is incorrect</string>
+
+    <!--back pressed-->
+    <string name="back_press_again">Click again to exit</string>
+
+    <!--  Register Screen String starts here  -->
+    <string name="registerScreenTitle">Register</string>
+    <string name="nameHint">Full Name</string>
+    <string name="firstNameHint">First Name</string>
+    <string name="lastNameHint">Last Name</string>
+    <string name="emailHint">Email Address</string>
+    <string name="passwordHint">Password</string>
+    <string name="retypepasswordHint">Retype Password</string>
+    <string name="termsnconditionLink">By registering, you agree with our T&amp;C\'s</string>
+    <string name="register">Register</string>
+
+
+    <!--  forgot password Screen String starts here  -->
+    <string name="forgot_password_statement">Enter your email address and we will send you instructions on how to reset your password.</string>
+    <string name="send">Send</string>
+    <string name="forgot_password_label">Forgot Password</string>
+
+
+    <!-- Network String Starts here -->
+    <string name="network_service_message_title">Network Services</string>
+    <string name="network_service_message">Network not available</string>
+
+    <!-- ShowAlertDialog String Starts here -->
+    <string name="Ok">OK</string>
+
+
+    <!-- Application Error Message -->
+    <string name="invalid_message">Oops! something went wrong. Please try again</string>
+    <string name="no_data_received">Could not get any data from the web server</string>
+    <string name="invalid_json_format">Invalid JSON format</string>
+    <string name="unauthorized_access">Unauthorized Access</string>
+
+
+    <!-- Google Map Settings -->
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false" >AIzaSyA1iEF7f-LLUgj_8lNJJMFRGZZE49PG6l8</string>
+    <string name="location_service_message_title">Location Services</string>
+    <string name="location_service_message">Kindly enable location services</string>
+
+    <!-- Media Settings -->
+    <string name='title_activity_choose_photo'>ChoosePhotoActivity</string>
+    <string name='from_camera'>Camera</string>
+    <string name='from_gallery'>Gallery</string>
+    <string name='record_video'>Record Video</string>
+    <string name='preview_image'>Preview Image</string>
+    <string name='preview_video'>Preview Video</string>
+    <string name='upload'>Upload</string>
+    <string name='update'>Update</string>
+    <string name='resizeImage'>Resize Image</string>
+    <string name='rotateImage'>Rotate Image</string>
+    <string name='deleteImage'>Delete Image</string>
+    <string name='deleteVideo'>Delete Video</string>
+    <string name='image_capture_cancelled'>User cancelled image capture</string>
+    <string name='failed_capture_image'>Sorry! Failed to capture image</string>
+    <string name="camera_no_image_selected">You haven\'t picked Image</string>
+    <string name="crop_not_supported">Your device doesn\'t support the crop action!</string>
+    <string name='video_capture_cancelled'>User cancelled video capture</string>
+    <string name='failed_capture_video'>Sorry! Failed to capture video</string>
+    <string name='incorrect_file_format'>Incorrect File Format</string>
+    <string name='file_does_not_exists'>File does not exists</string>
+    <string name='view_gallery'>View Gallery</string>
+    <string name='view_images_only'>View Images Only</string>
+    <string name='view_videos_only'>View Videos Only</string>
+    <string name='view_both_only'>View Both</string>
+    <string name='streaming_video'>Streaming Video</string>
+    <string name='buffering_video'>Buffering...</string>
+    <string name="selectProfilePicTitle">Choose Profile Image</string>
+    <string name="select_image">Select Image</string>
+
+    <!-- GooglePlayService Strings -->
+    <string name="device_not_supported">This device is not supported</string>
+    <string name="invalid_google_play_service_found">No valid Google Play Services APK found</string>
+
+    {GCM_STRING_SETTINGS}
+
+    <!-- SwipeList String -->
+    <string name="basic_action_1">Action_1</string>
+    <string name="basic_action_2">Action_2</string>
+    <string name="basic_del">Delete</string>
+    <string name="str_orange">#fe7b27</string>
+    <string name="str_green">#3cac69</string>
+    <string name="str_red">#FF4444</string>
+    <string name="str_yellow">#FFBB33</string>
+    <string name="str_sky_blue">#33B5E5</string>
+
+    {TWITTER_STRING_SETTINGS}
+
+
+    <string name="register_with_email">Register with email</string>
+    <string name="already_member">Already a member? Log in</string>
+    <string name="not_member">Not a member? Register</string>
+
+    <string name="forgot_password_message">You should receive an email shortly. Please follow the instructions on the email.</string>
+    <string name="forgot_password_title">Password sent to your email address</string>
+
+    <!-- tab String &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Submittals&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;-->
+
+    <string name="submittals">Submittals</string>
+    <string name="crews">Crew</string>
+    <string name="my_crews">My Crew</string>
+    <string name="jobs">Jobs</string>
+    <string name="job">Job</string>
+    <string name="my_jobs">My Jobs</string>
+    <string name="new_job">New Job</string>
+    <string name="update_job">Update Job</string>
+    <string name="job_details">Job Details</string>
+    <string name="edit_crews">Update Crew</string>
+    <string name="add_crews">Add Crew</string>
+    <string name="add_crew_member">Add Crew Member</string>
+    <string name="delete_crews">Delete Crew</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="dailies">Dailies</string>
+    <string name="my_dailies">My Dailies</string>
+    <string name="new_daily">New Daily</string>
+    <string name="incidents">Incidents</string>
+    <string name="incident">Incident</string>
+    <string name="images_gallery">Images Gallery</string>
+    <string name="incident_images">Incident Images</string>
+    <string name="daily_images">Daily Images</string>
+    <string name="incident_reports">Incident Reports</string>
+
+    <string name="submit">Submit</string>
+    <string name="resubmit">Resubmit</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+
+    <string name="new_status">New</string>
+
+    <!-- setting String -->
+
+    <string name="allow_notificatios">Allow Notifications</string>
+    <string name="set_reminders">Set Reminders</string>
+    <string name="set">Set</string>
+    <string name="allow_location"> Allow Location</string>
+    <string name="download_dailies">Download Dailies</string>
+    <string name="download_submitted_dailies">Download Submitted Dailies</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="share">Share</string>
+    <string name="logout">Logout</string>
+    <string name="loading">Loading...</string>
+
+    <string name="sign_out_confirmation_message">Are you sure you want to logout?</string>
+    <string name="job_delete_confirmation_message">Are you sure you want to delete job?</string>
+    <string name="daily_delete_confirmation_message">Are you sure you want to delete daily?</string>
+    <string name="crew_delete_confirmation_message">Are you sure you want to delete crew member?</string>
+    <string name="incident_delete_confirmation_message">Are you sure you want to delete incident?</string>
+    <string name="cancel">Cancel</string>
+    <string name="selectfile">Select File</string>
+    <string name="profile_image">Profile Image</string>
+
+    <string name="non_breakable_blank_space">&#160;</string>
+    <string name="blank_space">&#032;</string>
+    <string name="no_network">No internet connection!</string>
+    <string name="paasword_validation_message">Password can not be empty!</string>
+    <string name="email_validation_message">Please enter valid email ID!</string>
+    <string name="firstname_validation_message">Please enter First Name!</string>
+    <string name="lastname_validation_message">Please enter Last Name!</string>
+    <string name="submittals_search_hint">Search for submittals</string>
+    <string name="search_hint">Search</string>
+    <string name="select">Select</string>
+
+    <string name="copy_previous">Copy Previous</string>
+    <string name="description">Description</string>
+    <string name="description_hint">Job Description</string>
+    <string name="client_hint">Client Name</string>
+    <string name="location">Location</string>
+    <string name="daily_location">Daily Location</string>
+    <string name="location_hint">Search by street, town or zip code</string>
+    <string name="assign_to_foreman">Assign to Foreman</string>
+    <string name="production_items">Production Items</string>
+    <string name="production">Production</string>
+    <string name="foreman_list">Foreman List</string>
+    <string name="product_list">Product List</string>
+    <string name="select_product_quantity">Select Product Quantity</string>
+    <string name="product_quantity_validation">Please enter product quantity!</string>
+    <string name="job_id_validation">Please enter job ID!</string>
+    <string name="job_id">Job ID</string>
+    <string name="location_validation">Please enter location!</string>
+    <string name="job_description_validation">Please enter job description!</string>
+    <string name="description_validation">Please enter description!</string>
+    <string name="description_length_validation">Description must be at least 10 characters in length !</string>
+    <string name="job_assign_to_foreman_validation">Please select a foreman to assign job!</string>
+    <string name="product_select_validation">Please select product!</string>
+    <string name="client_name_validation">Please select client name!</string>
+    <string name="add_image">Add Image</string>
+    <string name="uploaded_images">Uploaded Images</string>
+    <string name="job_information">Job Information</string>
+    <string name="what_was_damaged">What was Damaged?</string>
+    <string name="who_owns_it">Who owns It?</string>
+    <string name="address">Address</string>
+    <string name="damage_address">Damage Address</string>
+    <string name="ticket_number">Ticket Number</string>
+    <string name="ticket_number_validation">Please enter ticket number!</string>
+    <string name="was_it_our_fault">Was It Our Fault?</string>
+    <string name="how_far_off_the_mark_was_it">How Far Off The Mark Was it?</string>
+    <string name="When_did_it_happen">When Did It Happen?</string>
+    <string name="gps_data_hint">GPS Data</string>
+    <string name="select_supervisor">Select Supervisor</string>
+    <string name="please_select_supervisor">Please select supervisor!</string>
+    <string name="select_operator">Select Operator</string>
+    <string name="map">Map</string>
+    <string name="locate_tickets">Locate Tickets</string>
+    <string name="work_date">Work Date</string>
+    <string name="work_date_validation">Please enter work date!</string>
+    <string name="to">To</string>
+    <string name="items">Items</string>
+    <string name="quantity">Quantity</string>
+    <string name="notes">Notes</string>
+    <string name="no_incidents">No Incidents</string>
+    <string name="no_image_found">No image found!</string>
+    <string name="no_crew_members">No Crew Members</string>
+    <string name="no_supervisors">No Supervisors</string>
+    <string name="no_foremans">No Foremans</string>
+    <string name="no_jobs">No Jobs</string>
+    <string name="no_products">No Products</string>
+    <string name="no_submittals">No Submittals</string>
+    <string name="no_Dailies">No Dailies</string>
+    <string name="select_job">Please select job!</string>
+    <string name="add_incident_images">Please add incident image!</string>
+    <string name="your_daily_has_been_submitted">Your daily has been submitted</string>
+    <string name="your_daily_has_been_saved">Your daily has been saved</string>
+    <string name="your_feedback_has_been_submitted">Your feedback has been submitted</string>
+    <string name="your_daily_discard_alert_message">Do you want to discard this daily?</string>
+    <string name="your_incident_discard_alert_message">Do you want to discard this incident report?</string>
+    <string name="your_incident_has_been_submitted">Your incident has been submitted</string>
+    <string name="your_incident_has_been_saved">Your incident has been saved</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+    <string name="update_daily">Update Daily</string>
+    <string name="rejected_daily">Rejected Daily</string>
+    <string name="max_image_selection_validation">Maximum 5 images can be selected!</string>
+    <string name="map_key">AIzaSyB6dYFdNA6_WiIgVsA3us5sZEaPGtYZeOs</string>
+    <string name="mark_validation">1234567890,\'\"-_</string>
+    <string name="ticket_validation">1234567890-,_.</string>
+    <string name="accepted">Accepted</string>
+    <string name="reject">Reject</string>
+    <string name="daily">Daily</string>
+    <string name="daily_rejection_details">Enter daily rejection details!</string>
+    <string name="date_validation">To date should be greater then or equal to from date!</string>
+    <string name="gps_recapture">Would you like to recapture GPS coordinates?</string>
+    <string name="accept">Accept</string>
+    <array name="foreman_job_pager_item">
+        <item>Active</item>
+        <item>Completed</item>
+    </array>
+
+    <array name="supervisor_submittal_pager_item">
+        <item>Active</item>
+        <item>Accepted</item>
+    </array>
+
+    <array name="supervisor_crews_pager_item">
+        <item>Profile</item>
+        <item>Jobs</item>
+        <item>Incidents</item>
+    </array>
+
+</resources>

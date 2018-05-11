@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/incident_date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="@dimen/dp10"
+                android:text="Date"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/dp10"
+                android:text="@string/uploaded_images"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp120">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.smartdata.utils.RoundRectCornerImageView
+                            android:id="@+id/incident_image_view1"
+                            android:layout_width="@dimen/dp90"
+                            android:layout_height="@dimen/dp90"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/rounded_gray_background"
+                            android:padding="@dimen/dp20"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_insert_photo" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:indeterminateDrawable="@drawable/custom_progress"
+                            android:visibility="gone" />
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.smartdata.utils.RoundRectCornerImageView
+                            android:id="@+id/incident_image_view2"
+                            android:layout_width="@dimen/dp90"
+                            android:layout_height="@dimen/dp90"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/rounded_gray_background"
+                            android:padding="@dimen/dp20"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_insert_photo" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:indeterminateDrawable="@drawable/custom_progress"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.smartdata.utils.RoundRectCornerImageView
+                            android:id="@+id/incident_image_view3"
+                            android:layout_width="@dimen/dp90"
+                            android:layout_height="@dimen/dp90"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/rounded_gray_background"
+                            android:padding="@dimen/dp20"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_insert_photo" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:indeterminateDrawable="@drawable/custom_progress"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.smartdata.utils.RoundRectCornerImageView
+                            android:id="@+id/incident_image_view4"
+                            android:layout_width="@dimen/dp90"
+                            android:layout_height="@dimen/dp90"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/rounded_gray_background"
+                            android:padding="@dimen/dp20"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_insert_photo" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:indeterminateDrawable="@drawable/custom_progress"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.smartdata.utils.RoundRectCornerImageView
+                            android:id="@+id/incident_image_view5"
+                            android:layout_width="@dimen/dp90"
+                            android:layout_height="@dimen/dp90"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/rounded_gray_background"
+                            android:padding="@dimen/dp20"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_insert_photo" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:indeterminateDrawable="@drawable/custom_progress"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/job_selection_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:gravity="left"
+                android:padding="@dimen/dp10"
+                android:text="@string/job"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="@string/what_was_damaged"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/what_damage_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="@string/who_owns_it"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/who_owns_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="@string/damage_address"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="@string/ticket_number"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ticket_number_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:gravity="left"
+                android:maxLines="1"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/dp10"
+                android:text="@string/was_it_our_fault"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/our_fault_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:gravity="left"
+                android:padding="@dimen/dp10"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/dp10"
+                android:text="@string/how_far_off_the_mark_was_it"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mark_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:gravity="left"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/dp10"
+                android:text="@string/When_did_it_happen"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:drawableEnd="@drawable/cal"
+                android:gravity="left"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/notes_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_gray_line_background"
+                android:gravity="left"
+                android:hint="@string/notes"
+                android:maxLines="3"
+                android:padding="@dimen/dp10"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
